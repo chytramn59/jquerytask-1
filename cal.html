@@ -19,7 +19,7 @@
 
             });
 
-           document.write(total);
+           $("#add").text(total);
 
         });
              
@@ -38,15 +38,22 @@
                 this.checked = false;
             });
             });
+             $("#about").hide();
+             $("#left").click(function(){
+                debugger
+             $("#about").show();
+            $("#home").hide();
+    });
             });
 
        
     </script>
     </head>
     <body>
-       <div class="container" id="test">
-        <h1>Get The Total</h1>
+       <div class="container">
+        <div class="row" id="home">
         <div class="row">
+            <h1>Get The Total</h1>
             <div class="col-sm-4">
              <input type="checkbox" class="demo" value="10"/>10
              </div>
@@ -72,18 +79,22 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <button type="button" id="right">unselect all</button>
-                    <button type="button" id="sel">select all</button>
+                    <button type="button" id="right" class="btn btn-warning">unselect all</button>
+                    <button type="button" id="sel" class="btn btn-warning">select all</button>
                 </div>
                  <div class="col-sm-4"></div>
             </div>
+        </div>
              <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4" style="margin-top:20px">
-                    <button type="button" id="left">submit</button>
+                    <button type="button" id="left" class="btn btn-success">submit</button>
                  </div>
             <div class="col-sm-4"></div>
     </div>
+</div>
+    <div class="row" id="about">
+        <span id="add"></span>
     </div>
 </div>
     </body>
