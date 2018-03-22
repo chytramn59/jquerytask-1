@@ -22,9 +22,14 @@
            $("#add").text(total);
 
         });
+            $('#parent').click(function () {
+                            debugger;
+                            $('input[type=checkbox]').click();
+                            this.checked = !this.checked;
+                        });
              
  
-             $("#sel").click(function () {
+             /*$("#sel").click(function () {
                 $(".demo").each(function(){
                 debugger;
                 this.checked = true;
@@ -37,7 +42,7 @@
                 debugger;
                 this.checked = false;
             });
-            });
+            });*/
              $("#about").hide();
              $("#left").click(function(){
                 debugger
@@ -84,8 +89,9 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <button type="button" id="right" class="btn btn-warning">unselect all</button>
-                    <button type="button" id="sel" class="btn btn-warning">select all</button>
+                    <!--<button type="button" id="right" class="btn btn-warning">unselect all</button>
+                    <button type="button" id="sel" class="btn btn-warning">select all</button>-->
+                     <button type="button" id="parent" class="btn btn-warning">select all</button>
                 </div>
                  <div class="col-sm-4"></div>
             </div>
@@ -112,3 +118,9 @@
 </div>
     </body>
     </html>
+    <style>
+        #add{
+            background-color:grey;
+            font-size:100px;
+        }
+    </style>
