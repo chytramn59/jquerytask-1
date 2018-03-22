@@ -44,6 +44,11 @@
              $("#about").show();
             $("#home").hide();
     });
+             $("#max").click(function(){
+                debugger
+             $("#about").hide();
+            $("#home").show();
+    });
             });
 
        
@@ -94,7 +99,15 @@
     </div>
 </div>
     <div class="row" id="about">
+        <div class="row">
+            <div class="col-sm-4">
+            <button type="button" class="btn btn-success" id="max">back</button>
+         </div>
+         <div class="col-sm-4">
         <span id="add"></span>
+    </div>
+    <div class="col-sm-4"></div>
+        </div>
     </div>
 </div>
     </body>
